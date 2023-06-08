@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="Website icon" type="png" href="https://pngimg.com/d/cycling_PNG52.png"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/card.css"/>
+    <link rel="stylesheet" href="./css/modal.css"/>
+    <link rel="stylesheet" href="./css/media.css"/>
+    <link rel="stylesheet" href="./css/burger.css"/>
+    <link rel="stylesheet" href="./css/karzina.css"/>
+    <title>Mybakh</title>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="sk()">
+          <img src="./img/ima.svg"    >
+        </div>
+        <nav>
+          <ul id="menu">  
+           
+          </ul>
+           
+          <button class="burger" onclick="block()">
+            <div class="ereq"></div>
+            <div class="ereq"></div>
+            <div class="ereq"></div>
+          </button>
+      
+       </div> 
+       </nav>
+       <form for="">
+         <input id="search" type="text"  placeholder="Search"  />
+       <!-- <button> <i class="fa fa-search" aria-hidden="true" style="font-size:25px;margin-left: 5px;" ></i></button> -->
+       </form>
+       <div class="a">   
+  
+        
+    </div> 
+       <div id="user"> 
+             <div class="leng">
+                <h6>eng</h6>
+                <h6>ru</h6>
+             </div>
+           
+             <div id="userinfo">
+                  <button class="btn" id="myBtnn" >Log In</button>
+                  <button class="btnb" id="myBtn" >Registracia</button>
+             </div>
+       </div>
+
+    <div class="basket" onclick="basketopen()" id="myBtnmy">
+      <p id="basketSum">0</p>
+      <img width="25px" src="https://www.svgrepo.com/show/25846/shopping-cart.svg" alt="">
+  </div>
+     
+    </header>
+   
+ 
+   <!-- <div id="baskerCard">
+
+    </div> -->
+ 
+   
+
+
+    <ul id="manMenu">
+
+    </ul>
+    <section id="section" >
+        <div class="reklama" id="carusel" >
+  
+         <button onclick="caruselLeft()"> 
+          <i class="fa fa-chevron-left" style="font-size:40px;color:rgb(42, 165, 126)"></i>
+         </button>
+         <div id="item_carusel">
+          
+
+         </div>
+          <button class="show" onclick="caruselRight()"> <i class="fa fa-chevron-right" style="font-size:40px;color: rgb(42, 165, 126)"></i></button>
+
+
+         </div>
+
+        <!-- Reklama -->
+
+        <div class="rek">
+          <marquee> Your Advertisement  Could Be Here...      </marquee>
+        </div>
+
+
+
+     <!--------------- gin poisk ------------------>
+
+         <div>
+          <label for="min-price">Minimum price:</label>
+          <input type="number" id="min-price" name="min-price" max="600">
+        </div>
+        <div>
+          <label for="max-price">Maximum price:</label>
+          <input type="number" id="max-price" name="max-price" max="700">
+        </div>
+      
+        <button id="filter-button">Filter</button>
+        
+  <!-- ======================================= -->
+  <div id="pagc"></div>
+  
+  <div class="cards" id="results">  </div> 
+  
+  <div id="pag"></div>
+ 
+    
+      
+        
+        
+        </section>
+  
+      <footer>
+        <div class="contact">
+          <h2 class="h2">Our Contacts</h2>
+          <a href="tel:+74951234567" class="tel">+7 (495) 123-45-67</a>
+          <div class="svg">
+            <a href="#" ><img src="./img/teleg.svg" class="svg2"  /></a>
+            <a href="#" ><img src="./img/VVK.png" class="svg2" /></a>
+            <a href="#" ><img src="./img/you.svg" class="svg2" /></a>
+          </div>
+
+        </div>
+          
+        <div class="carta">
+          <div class="adres">
+              <h2 class="h2">Our Address</h2>
+              <span class="adr">Country:Armenia<br/>City:of Yerevan<br/>
+                Address:2 Sasna Tzrer</span>
+           </div>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.769793939992!2d44.48805147530651!3d40.21418346794329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd5786da6433%3A0x18a597fcbbb933c3!2z0JzQsNC50LHQsNC50Lo!5e0!3m2!1sru!2sam!4v1684184084083!5m2!1sru!2sam"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+  
+
+    </footer>
+
+  <!------------------------- Modal content ----------------------------->
+
+    <div id="myModal" class="modal">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Registracia</h2>
+        </div>
+        <div class="modal-body">
+      
+           <input class="reg" type="text" placeholder="Name"></br>
+          <input class="reg" type="text" placeholder="Surname"></br>
+          <input class="reg" type="date" placeholder="Age"></br>
+          <input class="reg" type="email" placeholder="@email"></br>
+          <input class="reg" type="password" placeholder="Password"></br>
+          <input class="reg" type="password" placeholder="Password"><br>
+      
+
+     
+         <span class="a"> male
+            <input type="radio" name="c"></span>  
+      
+          <span class="a">female
+            <input type="radio" name="c"></span>
+        <br>
+        
+      
+           <span class="a">im noth robot 
+            <input type="checkbox"></span>
+      <br>
+        
+        <button class="mm">SUBMIT</button>
+       
+        </div>
+        <div class="modal-footer">
+          <h3>Thanck You</h3>
+        </div>
+      </div>
+      
+   </div>   
+    <!--===================== The Modal ===================-->
+
+    <div id="myModalz" class="modal1">
+        <div class="qw">  
+      
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close1">&times;</span>
+          <h2 style="text-align: center;">LOGIN</h2>
+        </div>
+        <div class="modal-body" >
+          <input  class="reg" type="email" placeholder="EMAIL"><br>
+          <input class="reg"  type="password" placeholder="PASSWORD"><br> <br>
+          <button class="mm">SUBMIT</button>
+        </div>
+    </div>
+    </div>
+    </div>
+     <!--===================== The Modal ===================-->
+
+     <div id="myModalq" class="modal2">
+    
+         <div class="modal-content">
+          <div class="modal-header">
+            <span class="close2">&times;</span>
+            <h2 style="text-align: center">Thanks for shopping</h2>
+           
+          </div> 
+
+   <div class="hashiv" id="totalPrice"> 0<p style="color:rgb(10, 107, 76)">&#36</p> </div> 
+
+          <div class="modal-body2"  id="baskerCard">
+          <div class="pust">   
+            <img width="300px" class="korImg" src="https://www.velosklad.ru/mob/img/emptycart.png"/><p>Your basket is empty.</p>
+          </div> 
+          </div>
+         </div>
+ 
+  </div>
+    
+
+
+      
+
+    
+    <script src="./js/index.js"></script> 
+    <script src="./js/modal.js"></script> 
+    <script src="./js/carusel.js"></script> 
+    <script src="./js/test_date.js"></script> 
+    <script src="./js/poisk.js"></script> 
+    <script src="./js/cards.js"></script> 
+    <script src="./js/input.js"></script>
+    <script src="./js/karzina.js"></script>
+</body>
+</html>
